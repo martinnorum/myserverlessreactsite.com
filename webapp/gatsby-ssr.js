@@ -1,9 +1,8 @@
 import React from 'react'
 import { ThemeProvider } from "theme-ui";
-import theme from '@rebass/preset'
-
+import theme from 'gatsby-plugin-theme-ui'
 export const wrapRootElement = ({ element }) => (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider>
         {element}
     </ThemeProvider>
 )
